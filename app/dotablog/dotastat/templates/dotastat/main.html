@@ -1,0 +1,28 @@
+{% extends 'dotastat/base.html' %}
+{% load static %}
+{% block title %}
+	Main
+{% endblock title %}
+{% block content %}
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-10 offset-md-1">
+				<div class="card text-white card-bg-black mb-3 card-match" style="max-width: 150rem;">
+					<div class="card-head-text card-bg-black">Match ID</div>
+					<div class="card-body card-bg-black">
+						<form class="" action="{% url 'match_details_url' %}" method="post">
+							{% csrf_token %}
+							<input type="text" class="form-control" name="get_match">
+							<button type="submit" name="button" class="btn btn-success btn-block mt-3">Find match</button>
+						</form>
+					</div>
+				</div>
+				<form>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock content %}
+</body>
+</html>

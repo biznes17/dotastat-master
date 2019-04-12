@@ -1,0 +1,69 @@
+{% load index %}
+<table class="table table-striped table-dark table-bordered table-hover">
+  <thead>
+    <tr><p class="d-radiant-team">RADIANT</p></tr>
+    <tr style="font-size:13px">
+      <th scope="col">Hero</th>
+      <th scope="col" style="width:180px">Player</th>
+      <th scope="col">K</th>
+      <th scope="col">D</th>
+      <th scope="col">A</th>
+      <th scope="col">NW</th>
+      <th scope="col">LH/D</th>
+      <th scope="col">GPM</th>
+      <th scope="col">XPM</th>
+      <th scope="col">DMG</th>
+      <th scope="col">HEAL</th>
+      <th scope="col">BLD</th>
+      <th scope="col" style="width:330px">Items</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for player in players %}
+      <tr style="font-size:13px">
+        <td><img src="{{ player.hero_img_url }}"></td>
+        {% if player.player_slot > 4 %}
+          <td class="d-rd">{{ player.name }}</td>
+        {% else %}
+          <td class="d-gr">{{ player.name }}</td>
+        {% endif %}
+        <td>{{ player.kills }}</td>
+        <td>{{ player.deaths }}</td>
+        <td>{{ player.assists }}</td>
+        <td style="color: yellow">{{ player.net_worth }}</td>
+        <td>{{ player.last_hits }}/ {{ player.denies }}</td>
+        <td>{{ player.gold_per_min }}</td>
+        <td>{{ player.xp_per_min }}</td>
+        <td>{{ player.hero_damage}}</td>
+        <td>{{ player.hero_healing }}</td>
+        <td>{{ player.tower_damage }}</td>
+        <td>
+          {% for i in player.items|values %}
+            <img src="/static/items/{{i|dict_access:'img_path'}}" width=45 height=35>
+          {% endfor %}
+        </td>
+      </tr>
+    </tbody>
+    {% if player.player_slot == 4 %}
+      <table class="table table-striped table-dark table-bordered table-hover">
+        <thead>
+          <tr><p class="d-dire-team">DIRE</p></tr>
+          <tr style="font-size:13px">
+            <th scope="col">Hero</th>
+            <th scope="col" style="width:180px">Player</th>
+            <th scope="col">K</th>
+            <th scope="col">D</th>
+            <th scope="col">A</th>
+            <th scope="col">NW</th>
+            <th scope="col">LH/D</th>
+            <th scope="col">GPM</th>
+            <th scope="col">XPM</th>
+            <th scope="col">DMG</th>
+            <th scope="col">HEAL</th>
+            <th scope="col">BLD</th>
+            <th scope="col" style="width:330px">Items</th>
+          </tr>
+        </thead>
+      {% endif %}
+    {% endfor %}
+  </table>

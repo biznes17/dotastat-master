@@ -1,0 +1,205 @@
+@font-face {
+		font-family: 'Trajan',
+		url('/fonts/TrajanPro-Regular.ttf') format ('truetype');
+		font-weight: normal;
+}
+
+.d-text-green-shadow {
+	font-family: 'Trajan';
+	color: #92A525;
+	font-size: 1.5em;
+	font-weight: 800 !important;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+	text-transform: uppercase;
+}
+
+.d-text-red-shadow {
+	font-family: 'Trajan';
+	color: #C23C2A;
+	font-size: 1.5em;
+	font-weight: 800 !important;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+	text-transform: uppercase;
+}
+
+.d-radiant-score {
+	font-family: 'Trajan';
+	display: inline;
+	color: #92A525;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 500 !important;
+	text-shadow: 1px 1px 5px black;
+}
+
+.d-dire-score {
+	font-family: 'Trajan';
+	display: inline;
+	color: #C23C2A;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 500 !important;
+	text-shadow: 1px 1px 5px black;
+}
+
+.d-info {
+	color: black;
+	text-align: left;
+	font-size: 17px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.d-match-info {
+	text-align: center;
+}
+
+.d-time {
+	color: white;
+	text-align: center;
+	font-size: 23px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-weight: 500 !important;
+	text-shadow: 1px 1px 5px black;
+}
+
+.d-radiant-team {
+	font-family: 'Trajan';
+	color: #92A525;
+	font-size: 1.5em;
+	font-weight: 800 !important;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: left;
+	text-shadow: 1px 1px 5px black;
+	text-transform: uppercase;
+}
+
+.d-dire-team {
+	font-family: 'Trajan';
+	color: #C23C2A;
+	font-size: 1.5em;
+	font-weight: 800 !important;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: left;
+	text-shadow: 1px 1px 5px black;
+	text-transform: uppercase;
+}
+
+.d-gr {
+	color: #92A525;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+.d-rd {
+	color: #C23C2A;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+.t-green {
+	background-color: #3f4906;
+}
+
+.t-red {
+	background-color: #4c0f06;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.back {
+	background: url("/static/images/back2.jpeg") 50% 0 repeat fixed;
+}
+
+.mt {
+	margin-top: 100px;
+}
+
+.img {
+	background: url("/static/images/back.jpeg") 10% 0 repeat fixed;
+}
+
+.hv:hover {
+	background-color: #53544f;
+}
+
+.table-dt {
+	background-color: #062b24;
+}
+
+.dota-bar {
+	height: 90px;
+	background: url("/static/images/dota.png") 50% 0 repeat;
+}
+
+
+.search-button-dark {
+	background-color: #C23C2A;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600 !important;
+	text-shadow: 1px 1px 5px black;
+	margin-left: 45%;
+}
+
+
+.card-head-text {
+	font-family: 'Trajan';
+	color: green;
+	font-size: 1.5em;
+	font-weight: 500 !important;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.card-bg-black {
+	background-color: #2a2a30;
+}
+
+.card-match {
+	margin-top: 25%;
+}
+
+.match-input {
+	font-family: 'Trajan';
+	text-align: center;
+}
+
+.nav-but-main {
+	font-family: 'Trajan';
+	color: #86868c;
+	font-size: 1.4em;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+	text-transform: uppercase;
+	margin-left: 22%;
+	margin-top: 10px;
+	padding-top: 0px;
+}
+
+.nav-but-main:hover {
+	color: white;
+	text-shadow: 2px 2px 4px #2466c9;
+}

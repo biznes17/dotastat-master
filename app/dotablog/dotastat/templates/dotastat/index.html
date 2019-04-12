@@ -1,0 +1,18 @@
+{% extends 'dotastat/base.html' %}
+{% load static %}
+
+{% block title %}
+	Match {{ match_id }} details
+{% endblock title %}
+
+
+{% block content %}
+	<div class="container mt-5">
+	<div class="row">
+		<div class="">
+			{% include 'dotastat/includes/match_details_form.html' %}
+			{% include 'dotastat/includes/players_table.html' %}
+		</div>
+	</div>
+</div>
+{% endblock content %}

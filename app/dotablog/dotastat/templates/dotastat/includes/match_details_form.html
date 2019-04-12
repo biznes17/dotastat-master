@@ -1,0 +1,39 @@
+
+<table class="table table-striped table-dark table-bordered table-hover mt">
+  <thead>
+    <tr>
+      <th scope="col">Match ID</th>
+      <th scope="col">Lobby Type</th>
+      <th scope="col">Game mode</th>
+      <th scope="col">Region</th>
+      <th scope="col">Duration</th>
+      <th scope="col">Start Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ match.match_id }}</td>
+      <td>{{ match.lobby }}</td>
+      <td>{{ match.gamemode }}</td>
+      <td>{{ match.region }}</td>
+      <td>{{ match.duration }}</td>
+      <td>{{ match.start_time }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div class="">
+  {% if match.radiant_win %}
+        <p class="d-text-green-shadow">RADIANT VICTORY</p>
+  {% else %}
+        <p class="d-text-red-shadow">DIRE VICTORY</p>
+  {% endif %}
+  
+      <div class="nav justify-content-center">
+        <p class="d-radiant-score">{{ match.radiant_score }}</p>
+        <p class="d-time">:</p>
+        <p class="d-dire-score">{{ match.dire_score }}</p>
+      </div>
+
+</div>
